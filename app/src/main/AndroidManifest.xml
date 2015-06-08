@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="atchley.chris.zombiepositions" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FourPlayerActivity"
+            android:label="@string/title_activity_four_player"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".FourPlayerChooserActivity" >
+        </activity>
+        <activity
+            android:name=".SixPlayerActivity"
+            android:label="@string/title_activity_six_player"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".FourPlayerChooserActivity"
+            android:label="@string/title_activity_four_player_chooser"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity">
+        </activity>
+    </application>
+
+</manifest>

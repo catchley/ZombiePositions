@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="atchley.chris.zombiepositions.FourPlayerChooserActivity"
+                android:background="@android:color/black">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView12"
+        android:src="@drawable/zombiehand"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="3"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentLeft = "false"
+            android:layout_weight="3">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:weightSum="2"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/chrisButton"
+                    android:id="@+id/chrisButton"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:background="#8ffff920"
+                    android:layout_margin="10dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/mikeButton"
+                    android:id="@+id/mikeButton"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:background="#8ffff920"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:weightSum="2">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/brianButton"
+                    android:id="@+id/brianButton"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:background="#8ffff920"
+                    android:layout_margin="10dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/patRiceButton"
+                    android:id="@+id/patRiceButton"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:background="#8ffff920"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:weightSum="2">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/dirtButton"
+                    android:id="@+id/dirtButton"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:background="#8ffff920"
+                    android:layout_margin="10dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/twomeyButton"
+                    android:id="@+id/twomeyButton"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:background="#8ffff920"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nameRandomButton"
+            android:id="@+id/doneChoosingButton"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:background="@android:color/holo_red_light"/>
+    </LinearLayout>
+
+</RelativeLayout>

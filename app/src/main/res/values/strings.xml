@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Zombie Positions</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="mainTitle">How Many Players?</string>
+    <string name="title_activity_four_player">FourPlayerActivity</string>
+    <string name="fourPlayerButtonText">4 PLAYERS</string>
+    <string name="sixPlayerButtonText">6 PLAYERS</string>
+    <string name="title_activity_six_player">SixPlayerActivity</string>
+    <string name="title_activity_four_player_chooser">FourPlayerChooserActivity</string>
+    <string name="player1">Chris</string>
+    <string name="player2">Mike</string>
+    <string name="positionRandomButton">Randomize</string>
+    <string name="nameRandomButton">Done Choosing</string>
+    <string name="chrisButton">Add Chris</string>
+    <string name="mikeButton">Add Mike</string>
+    <string name="brianButton">Add Brian</string>
+    <string name="patRiceButton">Add Pat Rice</string>
+    <string name="dirtButton">Add Dirt</string>
+    <string name="twomeyButton">Add Twomey</string>
+    <string name="mikes_name">Mike</string>
+    <string name="chris_name">Chris</string>
+    <string name="brians_name">Brian</string>
+    <string name="dirts_name">Dirt</string>
+    <string name="twomeys_name">Twomey</string>
+    <string name="pat_rice_name">Pat Rice</string>
+    <string name="playerRandButton">Randomize</string>
+    <string name="roverText">Rover</string>
+    <string name="stairsText">Stairs</string>
+    <string name="windowText">Window</string>
+    <string name="balconyText">Balcony</string>
+    <string name="chooseMoreText">Choose more people!</string>
+    <string name="outText">Out</string>
+    <string name="sittingText">Sitting</string>
+    <string name="addedText">" added!"</string>
+
+
+</resources>
