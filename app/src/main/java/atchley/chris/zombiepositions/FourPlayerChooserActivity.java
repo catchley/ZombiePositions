@@ -2,6 +2,7 @@ package atchley.chris.zombiepositions;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -36,11 +37,14 @@ public class FourPlayerChooserActivity extends ActionBarActivity {
         mTwomeyButton = (Button) findViewById(R.id.twomeyButton);
 
 
+
         mChrisButton.setOnClickListener(new View.OnClickListener() {
             String name = getString(R.string.chris_name);
 
+
             @Override
             public void onClick(View v) {
+                playSound();
                 addName(name, players, mChrisButton);
                 }
         });
@@ -51,6 +55,7 @@ public class FourPlayerChooserActivity extends ActionBarActivity {
 
             @Override
             public void onClick(View v) {
+                playSound();
                   addName(name, players, mMikeButton);
                 }
         });
@@ -61,6 +66,7 @@ public class FourPlayerChooserActivity extends ActionBarActivity {
 
             @Override
             public void onClick(View v) {
+                playSound();
                 addName(name, players, mBrianButton);
             }
         });
@@ -71,6 +77,7 @@ public class FourPlayerChooserActivity extends ActionBarActivity {
 
             @Override
             public void onClick(View v) {
+                playSound();
                 addName(name, players, mDirtButton);
             }
         });
@@ -81,6 +88,7 @@ public class FourPlayerChooserActivity extends ActionBarActivity {
 
             @Override
             public void onClick(View v) {
+                playSound();
                 addName(name, players, mPatRiceButton);
             }
         });
@@ -91,6 +99,7 @@ public class FourPlayerChooserActivity extends ActionBarActivity {
 
             @Override
             public void onClick(View v) {
+                playSound();
                 addName(name, players, mTwomeyButton);
             }
         });
@@ -144,6 +153,18 @@ public class FourPlayerChooserActivity extends ActionBarActivity {
             button.setText(name + getString((R.string.addedText)));
 
         }
+
+    }
+
+    private void playSound(){
+        MediaPlayer player = MediaPlayer.create(this,R.raw.coin);
+        player.start();
+        player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+            }
+        });
 
     }
 
