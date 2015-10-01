@@ -40,16 +40,20 @@ public class MainActivity extends ActionBarActivity {
                     Intent intent = new Intent(MainActivity.this, FourPlayerChooserActivity.class);
                     startActivity(intent);
                 }
+
+                mInterstitialAd.setAdListener(new AdListener() {
+                    @Override
+                    public void onAdClosed() {
+                        requestNewInterstitial();
+                        Intent intent = new Intent(MainActivity.this, FourPlayerChooserActivity.class);
+                        startActivity(intent);
+                    }
+                });
             }
-        });
-        mInterstitialAd.setAdListener(new AdListener() {
-            @Override
-            public void onAdClosed() {
-                requestNewInterstitial();
-                Intent intent = new Intent(MainActivity.this, FourPlayerChooserActivity.class);
-                startActivity(intent);
-            }
-        });
+        }
+
+        );
+
 
 
         //Button click opens 6 player activity
@@ -59,19 +63,21 @@ public class MainActivity extends ActionBarActivity {
                 if (mInterstitialAd.isLoaded()) {
                     mInterstitialAd.show();
                 } else {
-                Intent intent = new Intent(MainActivity.this, SixPlayerActivity.class);
-                startActivity(intent);
-            }}
+                    Intent intent = new Intent(MainActivity.this, SixPlayerActivity.class);
+                    startActivity(intent);
+                }
+                mInterstitialAd.setAdListener(new AdListener() {
+                    @Override
+                    public void onAdClosed() {
+                        requestNewInterstitial();
+                        Intent intent = new Intent(MainActivity.this, SixPlayerActivity.class);
+                        startActivity(intent);
+                    }
+                });
+            }
 
         });
-        mInterstitialAd.setAdListener(new AdListener() {
-            @Override
-            public void onAdClosed() {
-                requestNewInterstitial();
-                Intent intent = new Intent(MainActivity.this, SixPlayerActivity.class);
-                startActivity(intent);
-            }
-        });
+
 
 
     }
